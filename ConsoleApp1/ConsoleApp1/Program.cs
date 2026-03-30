@@ -3,6 +3,7 @@ using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,50 +18,22 @@ namespace ConsoleApp1
         {
             var rand = new Random();
 
-            //варіант 1 завдання 5
-
-            /*Console.WriteLine("Введіть число а");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введіть число б");
-            int b = int.Parse(Console.ReadLine());
-            if (a > b)
-            {
-                b = a + 1;
-            }
-            else if (a == b)
-            {
-                b = b+1;
-            }
-            Console.WriteLine($"А = {a}, Б = {b}");   */
-
-            //варіант 2 завдання 5
-
-            /*Console.WriteLine("Введіть число а");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введіть число б");
-            int b = int.Parse(Console.ReadLine());
-            if (a > b)
-            {
-                a = b - 1;
-            }
-            Console.WriteLine($"А = {a}, Б = {b}");    */
-
-            //варіант 1 завдання 6
-            Console.WriteLine("Введіть число а");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Введіть число б");
-            int b = int.Parse(Console.ReadLine());
-            int c = 0;
-            if (a == b)
-            {
-                c = a + b;
-            }
-            else 
-            {
-                a = 0;
-                b = 0;
-            }
-            Console.WriteLine(c);
+            //Середній рівень завдання 19
+            int seconds1 = 7893;
+            int minutes = seconds1 / 60;
+            Console.WriteLine(minutes);
+            //Середній рівень завдання 20
+            int seconds2 = 8973;
+            int hours = seconds2 / 360;
+            Console.WriteLine(hours);
+            //Середній рівень завдання 21-22???
+            Console.WriteLine(seconds1 + seconds2);
+            //Середній рівень завдання 23 варіант 1
+            Console.WriteLine((seconds1 + seconds2)/60);
+            //Середній рівень завдання 23 варіант 2
+            Console.WriteLine(minutes);
+            //Середній рівень завдання 23 варіант 3
+            Console.WriteLine(hours/60);
 
 
         }
